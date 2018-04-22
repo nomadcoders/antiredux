@@ -55,9 +55,7 @@ const Button = styled.button`
 const NotificationPresenter = ({ id, text, seen }) => (
   <Notification seen={seen}>
     <Flex alignCenter justifyBetween>
-      <Title>
-        <Store.Consumer>{store => store.message}</Store.Consumer>
-      </Title>
+      <Title>{text}</Title>
       <FlexItem>
         <Fragment>
           <Store.Consumer>
